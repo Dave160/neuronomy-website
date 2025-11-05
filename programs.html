@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Programs - Neuronomy</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Styles personnalisés -->
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="Styles/common.css" />
+    <link rel="stylesheet" href="Styles/programs.css" />
+</head>
+<body>
+    <!-- Navigation Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+                <i class="bi bi-cpu-fill me-2"></i>Neuronomy
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="programs.html" title="Voir nos programmes d'apprentissage">
+                            <i class="bi bi-journals me-1"></i>Programs
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html" title="Accéder aux ressources gratuites">
+                            <i class="bi bi-download me-1"></i>Resources
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="science.html" title="Découvrir la science derrière notre méthode">
+                            <i class="bi bi-clipboard2-data me-1"></i>Science
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" title="Nous contacter">
+                            <i class="bi bi-chat-dots me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Programs Hero -->
+    <section class="programs-hero text-white">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-12 text-center">
+                    <h1 class="display-3 fw-bold mb-4">Transform Your Learning <span class="highlight">Abilities</span></h1>
+                    <p class="lead mb-5">Choose from our neuroscience-backed programs designed for every stage of your learning journey</p>
+                    
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-auto text-center mx-4">
+                            <div class="h1 fw-bold">94%</div>
+                            <small class="opacity-75">Success Rate</small>
+                        </div>
+                        <div class="col-auto text-center mx-4">
+                            <div class="h1 fw-bold">8</div>
+                            <small class="opacity-75">Weeks to Mastery</small>
+                        </div>
+                        <div class="col-auto text-center mx-4">
+                            <div class="h1 fw-bold">10K+</div>
+                            <small class="opacity-75">Lives Transformed</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Grid -->
+    <section class="section-padding bg-light" id="programs-grid">
+        <div class="container">
+            <div class="programs-grid">
+                <!-- Student Program -->
+                <div class="program-card fade-in-up" id="students">
+                    <div class="program-badge student-badge">
+                        <i class="bi bi-mortarboard me-2"></i>For Students
+                    </div>
+                    <div class="program-image">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Student learning program with academic materials">
+                    </div>
+                    <div class="program-content">
+                        <h3>Academic Excellence Program</h3>
+                        <p class="program-audience">Ages 12-22 • All Curriculum Types</p>
+                        <p class="program-description">Master study techniques, accelerate learning, and achieve academic success with neuroscience-backed methods.</p>
+                        
+                        <div class="program-features">
+                            <h4>What You'll Master:</h4>
+                            <ul>
+                                <li><i class="bi bi-check-circle"></i>Memory palace techniques</li>
+                                <li><i class="bi bi-check-circle"></i>Speed reading & comprehension</li>
+                                <li><i class="bi bi-check-circle"></i>Exam preparation strategies</li>
+                                <li><i class="bi bi-check-circle"></i>Mental math calculations</li>
+                                <li><i class="bi bi-check-circle"></i>Time management skills</li>
+                            </ul>
+                        </div>
+
+                        <div class="program-details">
+                            <div class="detail">
+                                <i class="bi bi-clock"></i>
+                                <span>12 weeks • 3 sessions/week</span>
+                            </div>
+                            <div class="detail">
+                                <i class="bi bi-people"></i>
+                                <span>Small group & 1-on-1 sessions</span>
+                            </div>
+                            <div class="detail">
+                                <i class="bi bi-laptop"></i>
+                                <span>Online & in-person options</span>
+                            </div>
+                        </div>
+
+                        <div class="program-pricing">
+                            <div class="price">$497</div>
+                            <div class="price-note">or 3 monthly payments of $179</div>
+                        </div>
+
+                        <div class="program-actions">
+                            <button class="btn btn-gradient program-cta" onclick="enrollProgram('Academic Excellence Program')">
+                                Enroll Now
+                            </button>
+                            <button class="btn btn-outline-primary" onclick="viewSyllabus('student')">
+                                View Syllabus
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Program -->
+                <div class="program-card fade-in-up" id="professionals">
+                    <div class="program-badge professional-badge">
+                        <i class="bi bi-briefcase me-2"></i>For Professionals
+                    </div>
+                    <div class="program-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Professional development program in modern office">
+                    </div>
+                    <div class="program-content">
+                        <h3>Career Accelerator Program</h3>
+                        <p class="program-audience">Working Professionals • Career Growth</p>
+                        <p class="program-description">Enhance productivity, master new skills rapidly, and advance your career with cognitive enhancement techniques.</p>
+                        
+                        <div class="program-features">
+                            <h4>What You'll Master:</h4>
+                            <ul>
+                                <li><i class="bi bi-check-circle"></i>Rapid skill acquisition</li>
+                                <li><i class="bi bi-check-circle"></i>Information processing</li>
+                                <li><i class="bi bi-check-circle"></i>Presentation & recall</li>
+                                <li><i class="bi bi-check-circle"></i>Decision making</li>
+                                <li><i class="bi bi-check-circle"></i>Leadership communication</li>
+                            </ul>
+                        </div>
+
+                        <div class="program-details">
+                            <div class="detail">
+                                <i class="bi bi-clock"></i>
+                                <span>8 weeks • Flexible scheduling</span>
+                            </div>
+                            <div class="detail">
+                                <i class="bi bi-people"></i>
+                                <span>Executive coaching available</span>
+                            </div>
+                            <div class="detail">
+                                <i class="bi bi-laptop"></i>
+                                <span>100% online delivery</span>
+                            </div>
+                        </div>
+
+                        <div class="program-pricing">
+                            <div class="price">$797</div>
+                            <div class="price-note">or 4 monthly payments of $219</div>
+                        </div>
+
+                        <div class="program-actions">
+                            <button class="btn btn-gradient program-cta" onclick="requestDemo('Career Accelerator Program')">
+                                Request Demo
+                            </button>
+                            <button class="btn btn-outline-primary" onclick="downloadBrochure('professional')">
+                                Download Brochure
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adult Learner Program -->
+                <div class="program-card fade-in-up" id="adults">
+                    <div class="program-badge adult-badge">
+                        <i class="bi bi-person-gear me-2"></i>For Adults
+                    </div>
+                    <div class="program-image">
+                        <img src="https://images.unsplash.com/photo-1580894894513-541e068a3e2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Adult learning program for personal development">
+                    </div>
+                    <div class="program-content">
+                        <h3>Lifelong Learning Program</h3>
+                        <p class="program-audience">Adults 25+ • Personal Development</p>
+                        <p class="program-description">Keep your mind sharp, learn new skills, and maintain cognitive health at any age with proven techniques.</p>
+                        
+                        <div class="program-features">
+                            <h4>What You'll Master:</h4>
+                            <ul>
+                                <li><i class="bi bi-check-circle"></i>Memory maintenance</li>
+                                <li><i class="bi bi-check-circle"></i>Mental math fluency</li>
+                                <li><i class="bi bi-check-circle"></i>Learning new languages</li>
+                                <li><i class="bi bi-check-circle"></i>Brain health strategies</li>
+                                <li><i class="bi bi-check-circle"></i>Creative thinking</li>
+                            </ul>
+                        </div>
+
+                        <div class="program-details">
+                            <div class="detail">
+                                <i class="bi bi-clock"></i>
+                                <span>Self-paced • 6-12 months</span>
+                            </div>
+                            <div class="detail">
+                                <i class="bi bi-people"></i>
+                                <span>Community learning groups</span>
+                            </div>
+                            <div class="detail">
+                                <i class="bi bi-laptop"></i>
+                                <span>Mobile app access</span>
+                            </div>
+                        </div>
+
+                        <div class="program-pricing">
+                            <div class="price">$297/year</div>
+                            <div class="price-note">Monthly subscription available</div>
+                        </div>
+
+                        <div class="program-actions">
+                            <button class="btn btn-gradient program-cta" onclick="startFreeTrial('Lifelong Learning Program')">
+                                Start Free Trial
+                            </button>
+                            <button class="btn btn-outline-primary" onclick="viewCurriculum('adult')">
+                                View Curriculum
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Comparison -->
+    <section class="section-padding" id="comparison">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Find Your Perfect <span class="highlight">Program Fit</span></h2>
+            </div>
+            
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <div class="feature-column">Program Features</div>
+                    <div class="program-column">Students</div>
+                    <div class="program-column">Professionals</div>
+                    <div class="program-column">Adult Learners</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="feature-column">Duration</div>
+                    <div class="program-column">12 weeks</div>
+                    <div class="program-column">8 weeks</div>
+                    <div class="program-column">Self-paced</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="feature-column">Sessions per Week</div>
+                    <div class="program-column">3</div>
+                    <div class="program-column">2</div>
+                    <div class="program-column">Flexible</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="feature-column">Personal Coaching</div>
+                    <div class="program-column"><i class="bi bi-check-lg"></i></div>
+                    <div class="program-column"><i class="bi bi-check-lg"></i></div>
+                    <div class="program-column">Community</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="feature-column">Mobile App Access</div>
+                    <div class="program-column"><i class="bi bi-check-lg"></i></div>
+                    <div class="program-column"><i class="bi bi-check-lg"></i></div>
+                    <div class="program-column"><i class="bi bi-check-lg"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding bg-gradient text-white">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="display-5 fw-bold mb-3">Still Unsure Which Program is Right for You?</h2>
+                <p class="lead mb-4 opacity-75">Take our 2-minute assessment to discover your ideal learning path</p>
+                
+                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                    <button class="btn btn-light btn-lg px-5 py-3 fw-bold" onclick="takeAssessment()">
+                        Take Free Assessment
+                    </button>
+                    <button class="btn btn-outline-light btn-lg px-5 py-3" onclick="scheduleConsultation()">
+                        Book Free Consultation
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand fw-bold fs-3 mb-3 d-inline-block" href="index.html">
+                        <i class="bi bi-cpu-fill me-2"></i>Neuronomy
+                    </a>
+                    <p class="text-light opacity-75">Training minds for tomorrow's challenges through neuroscience-based learning.</p>
+                </div>
+                
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <h5 class="mb-3">Programs</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="programs.html#students" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                                        For Students
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="programs.html#professionals" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                                        For Professionals
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="programs.html#adults" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                                        For Adults
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <h5 class="mb-3">Resources</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="resources.html" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                                        Free Exercises
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="resources.html" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                                        Learning Blog
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="resources.html" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                                        Research Papers
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <h5 class="mb-3">Company</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="science.html" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                                        Our Science
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="contact.html" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="careers.html" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                                        Careers
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0 text-light opacity-75">
+                        &copy; 2025 Neuronomy. All rights reserved. | 
+                        <a href="#" class="text-light text-decoration-none opacity-75 hover-opacity-100">Privacy Policy</a> | 
+                        <a href="#" class="text-light text-decoration-none opacity-75 hover-opacity-100">Terms of Service</a>
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="d-flex justify-content-md-end gap-3">
+                        <a href="#" class="text-light opacity-75 hover-opacity-100">
+                            <i class="bi bi-twitter fs-5"></i>
+                        </a>
+                        <a href="#" class="text-light opacity-75 hover-opacity-100">
+                            <i class="bi bi-linkedin fs-5"></i>
+                        </a>
+                        <a href="#" class="text-light opacity-75 hover-opacity-100">
+                            <i class="bi bi-youtube fs-5"></i>
+                        </a>
+                        <a href="#" class="text-light opacity-75 hover-opacity-100">
+                            <i class="bi bi-instagram fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Notre JS -->
+    <script src="main.js"></script>
+    
+    <!-- Script spécifique à programs.html -->
+    <script>
+        // Fonctions pour les programmes
+        function enrollProgram(programName) {
+            alert(`🎓 Inscription au programme : ${programName}\n\nCette fonction ouvrirait normalement un formulaire d'inscription. En attendant, vous pouvez nous contacter pour plus d'informations.`);
+        }
+
+        function requestDemo(programName) {
+            alert(`📅 Démonstration demandée pour : ${programName}\n\nNous vous contacterons pour planifier une démonstration personnalisée.`);
+        }
+
+        function startFreeTrial(programName) {
+            alert(`🚀 Essai gratuit démarré pour : ${programName}\n\nVous recevrez un email avec vos identifiants d'accès dans quelques minutes.`);
+        }
+
+        function viewSyllabus(type) {
+            alert(`📚 Programme détaillé en cours de développement\n\nLe syllabus du programme ${type} sera bientôt disponible.`);
+        }
+
+        function downloadBrochure(type) {
+            alert(`📥 Téléchargement de la brochure ${type}\n\nLa brochure sera téléchargée automatiquement.`);
+        }
+
+        function viewCurriculum(type) {
+            alert(`📖 Curriculum du programme ${type}\n\nLe curriculum détaillé est en cours de finalisation.`);
+        }
+
+        function takeAssessment() {
+            alert(`🧠 Évaluation cognitive\n\nCette évaluation de 2 minutes vous aidera à trouver le programme idéal pour vos objectifs.`);
+            // Redirection vers l'évaluation (à créer plus tard)
+            // window.location.href = 'assessment.html';
+        }
+
+        function scheduleConsultation() {
+            alert(`💬 Consultation gratuite\n\nPlanifions un appel de 15 minutes pour discuter de vos objectifs d'apprentissage.`);
+            // window.location.href = 'contact.html';
+        }
+    </script>
+</body>
+</html>
