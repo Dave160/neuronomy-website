@@ -10,6 +10,38 @@
     <link rel="stylesheet" href="Styles/common.css">
     <link rel="stylesheet" href="Styles/404.css">
 </head>
+    <script>
+    // Récupérer la page d'origine depuis l'URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const fromPage = urlParams.get('from');
+    
+    if (fromPage) {
+        // Mettre à jour le message en fonction de la page d'origine
+        const messageElement = document.querySelector('.lead');
+        const pageTitles = {
+            'resources.html': 'Ressources Gratuites',
+            'science.html': 'La Science derrière Neuronomy', 
+            'contact.html': 'Page de Contact',
+            'careers.html': 'Opportunités de Carrière',
+            'programs.html': 'Nos Programmes'
+        };
+        
+        const pageTitle = pageTitles[fromPage] || fromPage.replace('.html', '');
+        
+        if (messageElement) {
+            messageElement.innerHTML = `
+                La page <strong>"${pageTitle}"</strong> est en cours de développement.<br>
+                Nous travaillons activement sur cette section et elle sera disponible bientôt.
+                <div class="mt-3">
+                    <small class="opacity-75">
+                        En attendant, explorez notre <a href="programs.html" class="text-white">page Programmes</a> 
+                        ou retournez à l'accueil.
+                    </small>
+                </div>
+            `;
+        }
+    }
+</script>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
@@ -37,4 +69,5 @@
         </div>
     </section>
 </body>
+
 </html>
