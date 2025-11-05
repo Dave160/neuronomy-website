@@ -1,0 +1,74 @@
+/* Hero Section */
+.hero-section {
+  background: var(--primary-gradient);
+  min-height: 100vh;
+  padding-top: 76px;
+}
+
+.hero-badge {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* Cards */
+.feature-card, .audience-card, .process-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
+.feature-card:hover, .audience-card:hover, .process-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Icons */
+.card-icon, .step-icon, .feature-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0 auto 1.5rem;
+}
+
+.step-icon, .feature-icon {
+  background: var(--primary-gradient);
+  color: white;
+}
+
+/* Floating elements */
+.floating-card {
+  animation: float 3s ease-in-out infinite;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Step numbers */
+.step-number {
+  color: #e9ecef !important;
+  z-index: 1;
+  position: relative;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 66px;
+    text-align: center;
+  }
+  
+  .floating-elements {
+    position: static;
+    margin-top: 2rem;
+  }
+  
+  .section-padding {
+    padding: 4rem 0;
+  }
+}

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neuronomy — Train Your Neurons for Rocket-Speed Recall</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Styles personnalisés -->
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="Styles/common.css" />
+    <link rel="stylesheet" href="Styles/index.css" />
+</head>
+<body>
+    <!-- Navigation Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+                <i class="bi bi-cpu-fill me-2"></i>Neuronomy
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="programs.html" title="Voir nos programmes d'apprentissage">
+                            <i class="bi bi-journals me-1"></i>Programs
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html" title="Accéder aux ressources gratuites">
+                            <i class="bi bi-download me-1"></i>Resources
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="science.html" title="Découvrir la science derrière notre méthode">
+                            <i class="bi bi-clipboard2-data me-1"></i>Science
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" title="Nous contacter">
+                            <i class="bi bi-chat-dots me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <span class="hero-badge badge rounded-pill px-3 py-2 mb-3 d-inline-flex align-items-center">
+                        <i class="bi bi-star-fill me-2"></i>Neuroscience-Based Learning
+                    </span>
+                    <h1 class="display-4 fw-bold mb-4">
+                        Train Your Neurons for <span class="highlight">Rocket-Speed Recall</span>
+                    </h1>
+                    <p class="lead mb-4">
+                        Master memory techniques, speed math, and learning strategies backed by cognitive science. Transform how you learn, remember, and calculate.
+                    </p>
+                    
+                    <div class="row mb-4">
+                        <div class="col-4 text-center">
+                            <div class="h2 fw-bold">50%</div>
+                            <small class="text-light opacity-75">Faster Recall</small>
+                        </div>
+                        <div class="col-4 text-center">
+                            <div class="h2 fw-bold">3x</div>
+                            <small class="text-light opacity-75">Learning Speed</small>
+                        </div>
+                        <div class="col-4 text-center">
+                            <div class="h2 fw-bold">10k+</div>
+                            <small class="text-light opacity-75">Students Trained</small>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="programs.html" class="btn btn-gradient btn-lg px-4 py-3" title="Découvrir nos programmes de formation">
+                            <i class="bi bi-rocket-takeoff me-2"></i>Start Your Journey
+                        </a>
+                        <a href="#how-it-works" class="btn btn-outline-light btn-lg px-4 py-3" title="Voir comment fonctionne notre méthode">
+                            <i class="bi bi-play-circle me-2"></i>See How It Works
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 position-relative mt-5 mt-lg-0">
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                         alt="Brain network visualization showing neural connections" 
+                         class="img-fluid rounded-3 shadow-lg">
+                    <div class="position-absolute top-50 start-0 translate-middle-y d-none d-lg-block">
+                        <div class="floating-card bg-white text-dark rounded-3 p-3 mb-3 shadow">
+                            <i class="bi bi-lightning-charge text-primary me-2"></i>
+                            <span class="fw-medium">Memory Boost</span>
+                        </div>
+                        <div class="floating-card bg-white text-dark rounded-3 p-3 mb-3 shadow" style="animation-delay: 1s;">
+                            <i class="bi bi-calculator text-primary me-2"></i>
+                            <span class="fw-medium">Speed Math</span>
+                        </div>
+                        <div class="floating-card bg-white text-dark rounded-3 p-3 shadow" style="animation-delay: 2s;">
+                            <i class="bi bi-graph-up-arrow text-primary me-2"></i>
+                            <span class="fw-medium">Smart Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audience Section -->
+    <section class="section-padding bg-light" id="audience">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Designed for <span class="highlight">Every Learner</span></h2>
+                <p class="lead text-muted">From classroom to boardroom, our neuroscience-based methods adapt to your learning journey</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Student Card -->
+                <div class="col-md-4">
+                    <div class="card audience-card h-100 border-0 shadow-sm fade-in-up">
+                        <div class="card-icon bg-primary text-white mx-auto mt-4">
+                            <i class="bi bi-mortarboard"></i>
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h3 class="card-title h4 mb-3">Students</h3>
+                            <p class="card-text text-muted mb-4">Master exam preparation, accelerate learning, and build study skills that last a lifetime</p>
+                            <ul class="list-unstyled text-start mb-4">
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Faster information retention</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Improved exam performance</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Effective study techniques</li>
+                            </ul>
+                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Students learning together in a classroom" 
+                                 class="img-fluid rounded mt-3">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Professional Card -->
+                <div class="col-md-4">
+                    <div class="card audience-card h-100 border-0 shadow-sm fade-in-up">
+                        <div class="card-icon bg-success text-white mx-auto mt-4">
+                            <i class="bi bi-briefcase"></i>
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h3 class="card-title h4 mb-3">Professionals</h3>
+                            <p class="card-text text-muted mb-4">Enhance productivity, master new skills faster, and stay ahead in your career</p>
+                            <ul class="list-unstyled text-start mb-4">
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Rapid skill acquisition</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Enhanced problem-solving</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Better information recall</li>
+                            </ul>
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Professional working in a modern office" 
+                                 class="img-fluid rounded mt-3">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Adult Learner Card -->
+                <div class="col-md-4">
+                    <div class="card audience-card h-100 border-0 shadow-sm fade-in-up">
+                        <div class="card-icon bg-info text-white mx-auto mt-4">
+                            <i class="bi bi-person-gear"></i>
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h3 class="card-title h4 mb-3">Lifelong Learners</h3>
+                            <p class="card-text text-muted mb-4">Unlock your brain's potential at any age with proven cognitive enhancement techniques</p>
+                            <ul class="list-unstyled text-start mb-4">
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Mental math mastery</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Memory improvement</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Cognitive maintenance</li>
+                            </ul>
+                            <img src="https://images.unsplash.com/photo-1580894894513-541e068a3e2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Adult learning new skills with digital tools" 
+                                 class="img-fluid rounded mt-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="programs.html" class="btn btn-gradient btn-lg px-5" title="Explorer tous nos programmes">
+                    <i class="bi bi-search me-2"></i>Explore All Programs
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section-padding" id="how-it-works">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">How Neuronomy <span class="highlight">Transforms Learning</span></h2>
+                <p class="lead text-muted">Our 3-step neuroscience-backed approach to cognitive enhancement</p>
+            </div>
+            
+            <div class="row g-5">
+                <!-- Step 1 -->
+                <div class="col-lg-4">
+                    <div class="process-card text-center p-4 fade-in-up">
+                        <div class="step-number display-1 fw-bold text-light position-relative mb-3">01</div>
+                        <div class="step-icon bg-gradient text-white rounded-circle mx-auto mb-4">
+                            <i class="bi bi-brain fs-1"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Assess & Baseline</h3>
+                        <p class="text-muted mb-4">We evaluate your current cognitive abilities and learning patterns using neuroscience principles</p>
+                        <img src="https://images.unsplash.com/photo-1591453089816-0fbb971b454c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             alt="Cognitive assessment and brain analysis" 
+                             class="img-fluid rounded shadow-sm">
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="col-lg-4">
+                    <div class="process-card text-center p-4 fade-in-up">
+                        <div class="step-number display-1 fw-bold text-light position-relative mb-3">02</div>
+                        <div class="step-icon bg-gradient text-white rounded-circle mx-auto mb-4">
+                            <i class="bi bi-gear-fill fs-1"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Train & Develop</h3>
+                        <p class="text-muted mb-4">Personalized exercises and techniques to strengthen neural pathways and enhance cognitive functions</p>
+                        <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             alt="Brain training exercises and development" 
+                             class="img-fluid rounded shadow-sm">
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="col-lg-4">
+                    <div class="process-card text-center p-4 fade-in-up">
+                        <div class="step-number display-1 fw-bold text-light position-relative mb-3">03</div>
+                        <div class="step-icon bg-gradient text-white rounded-circle mx-auto mb-4">
+                            <i class="bi bi-graph-up-arrow fs-1"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Excel & Apply</h3>
+                        <p class="text-muted mb-4">Apply your enhanced abilities to real-world scenarios with measurable improvements in performance</p>
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                             alt="Success and achievement in learning" 
+                             class="img-fluid rounded shadow-sm">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">What Makes Neuronomy <span class="highlight">Different</span></h2>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Feature 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center p-4 fade-in-up">
+                        <div class="feature-icon bg-gradient text-white rounded-circle mx-auto mb-4">
+                            <i class="bi bi-clipboard2-pulse fs-2"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Science-Backed Methods</h3>
+                        <p class="text-muted small">Every technique is rooted in peer-reviewed neuroscience and cognitive psychology research</p>
+                    </div>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center p-4 fade-in-up">
+                        <div class="feature-icon bg-gradient text-white rounded-circle mx-auto mb-4">
+                            <i class="bi bi-person-video3 fs-2"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Personalized Approach</h3>
+                        <p class="text-muted small">Customized learning paths based on your unique cognitive profile and goals</p>
+                    </div>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center p-4 fade-in-up">
+                        <div class="feature-icon bg-gradient text-white rounded-circle mx-auto mb-4">
+                            <i class="bi bi-speedometer2 fs-2"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Measurable Results</h3>
+                        <p class="text-muted small">Track your progress with clear metrics and see tangible improvements in real-time</p>
+                    </div>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center p-4 fade-in-up">
+                        <div class="feature-icon bg-gradient text-white rounded-circle mx-auto mb-4">
+                            <i class="bi bi-phone fs-2"></i>
+                        </div>
+                        <h3 class="h5 mb-3">Flexible Learning</h3>
+                        <p class="text-muted small">Access our programs anytime, anywhere with our mobile-friendly platform</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding bg-gradient text-white">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="display-5 fw-bold mb-3">Ready to Transform Your Learning Abilities?</h2>
+                <p class="lead mb-4 opacity-75">Join thousands of learners who have unlocked their cognitive potential with Neuronomy</p>
+                
+                <div class="d-flex gap-3 justify-content-center flex-wrap mb-4">
+                    <a href="programs.html" class="btn btn-light btn-lg px-5 py-3 fw-bold" title="Commencer votre essai gratuit">
+                        <i class="bi bi-rocket-takeoff me-2"></i>Start Free Trial
+                    </a>
+                    <button type="button" class="btn btn-outline-light btn-lg px-5 py-3" onclick="scheduleDemo()" title="Réserver une démonstration gratuite">
+                        <i class="bi bi-calendar-check me-2"></i>Book Demo
+                    </button>
+                </div>
+                
+                <div class="d-flex align-items-center justify-content-center gap-2 text-light opacity-75">
+                    <i class="bi bi-shield-check"></i>
+                    <span>30-day money-back guarantee • No credit card required</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand fw-bold fs-3 mb-3 d-inline-block" href="index.html">
+                        <i class="bi bi-cpu-fill me-2"></i>Neuronomy
+                    </a>
+                    <p class="text-light opacity-75">Training minds for tomorrow's challenges through neuroscience-based learning.</p>
+                </div>
+                
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <h5 class="mb-3">Programs</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="programs.html#students" class="text-light text-decoration-none opacity-75 hover-opacity-100" title="Programmes pour étudiants">
+                                        For Students
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="programs.html#professionals" class="text-light text-decoration-none opacity-75 hover-opacity-100" title="Programmes pour professionnels">
+                                        For Professionals
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="programs.html#adults" class="text-light text-decoration-none opacity-75 hover-opacity-100" title="Programmes pour adultes">
+                                        For Adults
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <h5 class="mb-3">Resources</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="resources.html#exercises" class="text-light text-decoration-none opacity-75 hover-opacity-100" title="Exercices gratuits">
+                                        Free Exercises
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="resources.html#blog" class="text-light text-decoration-none opacity-75 hover-opacity-100" title="Blog d'apprentissage">
+                                        Learning Blog
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="resources.html#research" class="text-light text-decoration-none opacity-75 hover-opacity-100" title="Articles de recherche">
+                                        Research Papers
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <h5 class="mb-3">Company</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="science.html" class="text-light text-decoration-none opacity-75 hover-opacity-100" title="Notre approche scientifique">
+                                        Our Science
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="contact.html" class="text-light text-decoration-none opacity-75 hover-opacity-100" title="Nous contacter">
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="careers.html" class="text-light text-decoration-none opacity-75 hover-opacity-100" title="Opportunités de carrière">
+                                        Careers
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0 text-light opacity-75">
+                        &copy; 2025 Neuronomy. All rights reserved. | 
+                        <a href="#" class="text-light text-decoration-none opacity-75 hover-opacity-100" title="Politique de confidentialité">Privacy Policy</a> | 
+                        <a href="#" class="text-light text-decoration-none opacity-75 hover-opacity-100" title="Conditions d'utilisation">Terms of Service</a>
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="d-flex justify-content-md-end gap-3">
+                        <a href="#" class="text-light opacity-75 hover-opacity-100" title="Nous suivre sur Twitter">
+                            <i class="bi bi-twitter fs-5"></i>
+                        </a>
+                        <a href="#" class="text-light opacity-75 hover-opacity-100" title="Nous suivre sur LinkedIn">
+                            <i class="bi bi-linkedin fs-5"></i>
+                        </a>
+                        <a href="#" class="text-light opacity-75 hover-opacity-100" title="Nous suivre sur YouTube">
+                            <i class="bi bi-youtube fs-5"></i>
+                        </a>
+                        <a href="#" class="text-light opacity-75 hover-opacity-100" title="Nous suivre sur Instagram">
+                            <i class="bi bi-instagram fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Notre JS -->
+    <script src="main.js"></script>
+    
+    <!-- Script de secours pour les fonctionnalités -->
+    <script>
+        // Fonction de démonstration de secours
+        function scheduleDemo() {
+            // Si la page contact.html n'existe pas, afficher un message
+            if (typeof window.showConsultationModal === 'undefined') {
+                alert('Fonctionnalité de démonstration - Cette fonction ouvrirait normalement un formulaire de réservation. En attendant, vous pouvez nous contacter via la page Contact.');
+                // Redirection alternative vers la page contact
+                // window.location.href = 'contact.html';
+            }
+        }
+        
+        // Gestion des liens manquants
+        document.addEventListener('DOMContentLoaded', function() {
+            // Vérifier les liens et afficher des messages si les pages n'existent pas
+            const links = document.querySelectorAll('a[href]');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    // Si c'est un lien interne qui n'est pas index.html
+                    if (href && !href.startsWith('#') && !href.startsWith('http') && href !== 'index.html') {
+                        // Vérifier si la page existe (simulation)
+                        // En production, vous pourriez faire une vérification réelle
+                        console.log('Navigation vers:', href);
+                        // Si la page n'existe pas, le navigateur affichera une erreur 404
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
