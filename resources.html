@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Resources - Neuronomy</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Styles personnalisés -->
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="Styles/common.css" />
+    <link rel="stylesheet" href="Styles/resources.css" />
+</head>
+<body>
+    <!-- Navigation Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-2">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="index.html">
+                <i class="bi bi-cpu-fill me-2"></i>Neuronomy
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="programs.html" title="Voir nos programmes d'apprentissage">
+                            <i class="bi bi-journals me-1"></i>Programs
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="resources.html" title="Accéder aux ressources gratuites">
+                            <i class="bi bi-download me-1"></i>Resources
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="science.html" title="Découvrir la science derrière notre méthode">
+                            <i class="bi bi-clipboard2-data me-1"></i>Science
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" title="Nous contacter">
+                            <i class="bi bi-chat-dots me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Resources Hero -->
+    <section class="resources-hero text-white">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold mb-4">Free Learning <span class="highlight">Resources</span></h1>
+                    <p class="lead mb-5">Access neuroscience-backed tools, exercises, and guides to start enhancing your cognitive abilities today</p>
+                    
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-auto text-center mx-4">
+                            <div class="h1 fw-bold">50+</div>
+                            <small class="opacity-75">Free Resources</small>
+                        </div>
+                        <div class="col-auto text-center mx-4">
+                            <div class="h1 fw-bold">10K+</div>
+                            <small class="opacity-75">Downloads</small>
+                        </div>
+                        <div class="col-auto text-center mx-4">
+                            <div class="h1 fw-bold">100%</div>
+                            <small class="opacity-75">Free Access</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Resources -->
+    <section class="section-padding bg-light" id="featured-resources">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Featured <span class="highlight">Resources</span></h2>
+                <p class="lead text-muted">Start with our most popular free resources loved by thousands of learners</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Memory Kit -->
+                <div class="col-lg-4">
+                    <div class="resource-card fade-in-up">
+                        <div class="resource-badge popular">
+                            <i class="bi bi-star-fill me-2"></i>Most Popular
+                        </div>
+                        <div class="resource-icon">
+                            <i class="bi bi-lightning-charge"></i>
+                        </div>
+                        <h3>Memory Palace Starter Kit</h3>
+                        <p class="resource-description">Master the ancient technique of memory palaces with our step-by-step guide and practical exercises.</p>
+                        
+                        <div class="resource-meta">
+                            <span class="meta-item"><i class="bi bi-clock"></i>45 min</span>
+                            <span class="meta-item"><i class="bi bi-download"></i>PDF + Videos</span>
+                            <span class="meta-item"><i class="bi bi-person"></i>All Levels</span>
+                        </div>
+                        
+                        <div class="resource-features">
+                            <h4>Includes:</h4>
+                            <ul>
+                                <li>Step-by-step memory palace construction</li>
+                                <li>20 practice exercises with solutions</li>
+                                <li>Video demonstrations</li>
+                                <li>Progress tracking sheet</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="btn btn-gradient w-100" onclick="downloadResource('memory')">
+                            <i class="bi bi-download me-2"></i>Download Free Kit
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Math Workbook -->
+                <div class="col-lg-4">
+                    <div class="resource-card fade-in-up">
+                        <div class="resource-badge new">
+                            <i class="bi bi-gem me-2"></i>New Release
+                        </div>
+                        <div class="resource-icon">
+                            <i class="bi bi-calculator"></i>
+                        </div>
+                        <h3>Speed Math Workbook</h3>
+                        <p class="resource-description">Improve your mental math skills with proven techniques and progressive exercises.</p>
+                        
+                        <div class="resource-meta">
+                            <span class="meta-item"><i class="bi bi-clock"></i>1.5 hours</span>
+                            <span class="meta-item"><i class="bi bi-download"></i>PDF Workbook</span>
+                            <span class="meta-item"><i class="bi bi-person"></i>Beginner+</span>
+                        </div>
+                        
+                        <div class="resource-features">
+                            <h4>Includes:</h4>
+                            <ul>
+                                <li>Mental calculation techniques</li>
+                                <li>50+ practice problems</li>
+                                <li>Speed drills</li>
+                                <li>Answer key with explanations</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="btn btn-gradient w-100" onclick="downloadResource('math')">
+                            <i class="bi bi-download me-2"></i>Download Workbook
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Learning Guide -->
+                <div class="col-lg-4">
+                    <div class="resource-card fade-in-up">
+                        <div class="resource-badge essential">
+                            <i class="bi bi-bookmark-check me-2"></i>Essential
+                        </div>
+                        <div class="resource-icon">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <h3>Learning Strategy Guide</h3>
+                        <p class="resource-description">Discover evidence-based learning strategies that accelerate knowledge acquisition.</p>
+                        
+                        <div class="resource-meta">
+                            <span class="meta-item"><i class="bi bi-clock"></i>1 hour</span>
+                            <span class="meta-item"><i class="bi bi-download"></i>PDF Guide</span>
+                            <span class="meta-item"><i class="bi bi-person"></i>All Levels</span>
+                        </div>
+                        
+                        <div class="resource-features">
+                            <h4>Includes:</h4>
+                            <ul>
+                                <li>Spaced repetition schedules</li>
+                                <li>Active recall techniques</li>
+                                <li>Interleaving practice methods</li>
+                                <li>Study planning templates</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="btn btn-gradient w-100" onclick="downloadResource('learning')">
+                            <i class="bi bi-download me-2"></i>Download Guide
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Tools -->
+    <section class="section-padding" id="interactive-tools">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Interactive <span class="highlight">Learning Tools</span></h2>
+                <p class="lead text-muted">Practice your skills with our web-based interactive exercises</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Memory Challenge -->
+                <div class="col-md-4">
+                    <div class="tool-card fade-in-up text-center">
+                        <div class="tool-header mb-4">
+                            <div class="tool-icon">
+                                <i class="bi bi-collection-play"></i>
+                            </div>
+                            <h3>Memory Challenge</h3>
+                        </div>
+                        <p class="mb-4">Test and improve your short-term memory with progressive difficulty levels.</p>
+                        
+                        <div class="tool-stats mb-4">
+                            <div class="stat">
+                                <strong>5</strong>
+                                <span>Difficulty Levels</span>
+                            </div>
+                            <div class="stat">
+                                <strong>∞</strong>
+                                <span>Unlimited Practice</span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-outline-primary w-100" onclick="startMemoryChallenge()">
+                            <i class="bi bi-play-circle me-2"></i>Start Challenge
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Math Drill -->
+                <div class="col-md-4">
+                    <div class="tool-card fade-in-up text-center">
+                        <div class="tool-header mb-4">
+                            <div class="tool-icon">
+                                <i class="bi bi-calculator"></i>
+                            </div>
+                            <h3>Math Speed Drill</h3>
+                        </div>
+                        <p class="mb-4">Practice mental calculations with timed exercises and instant feedback.</p>
+                        
+                        <div class="tool-stats mb-4">
+                            <div class="stat">
+                                <strong>4</strong>
+                                <span>Operation Types</span>
+                            </div>
+                            <div class="stat">
+                                <strong>60s</strong>
+                                <span>Timed Rounds</span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-outline-primary w-100" onclick="startMathDrill()">
+                            <i class="bi bi-play-circle me-2"></i>Start Drill
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Pattern Recognition -->
+                <div class="col-md-4">
+                    <div class="tool-card fade-in-up text-center">
+                        <div class="tool-header mb-4">
+                            <div class="tool-icon">
+                                <i class="bi bi-puzzle"></i>
+                            </div>
+                            <h3>Pattern Recognition</h3>
+                        </div>
+                        <p class="mb-4">Enhance your visual processing and pattern identification skills.</p>
+                        
+                        <div class="tool-stats mb-4">
+                            <div class="stat">
+                                <strong>3</strong>
+                                <span>Game Modes</span>
+                            </div>
+                            <div class="stat">
+                                <strong>100+</strong>
+                                <span>Patterns</span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-outline-primary w-100" onclick="startPatternGame()">
+                            <i class="bi bi-play-circle me-2"></i>Start Game
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand fw-bold fs-4 mb-3 d-inline-block" href="index.html">
+                        <i class="bi bi-cpu-fill me-2"></i>Neuronomy
+                    </a>
+                    <p class="text-light opacity-75">Training minds for tomorrow's challenges through neuroscience-based learning.</p>
+                </div>
+                
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <h5 class="mb-3">Programs</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="programs.html#students" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                                        For Students
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="programs.html#professionals" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                                        For Professionals
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="programs.html#adults" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                                        For Adults
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <h5 class="mb-3">Resources</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="resources.html#featured-resources" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                                        Free Exercises
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="resources.html#interactive-tools" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                                        Learning Tools
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="resources.html" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                                        Research Papers
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <h5 class="mb-3">Company</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="science.html" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                                        Our Science
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="contact.html" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="careers.html" class="text-light text-decoration-none opacity-75 hover-opacity-100">
+                                        Careers
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0 text-light opacity-75">
+                        &copy; 2025 Neuronomy. All rights reserved. | 
+                        <a href="#" class="text-light text-decoration-none opacity-75 hover-opacity-100">Privacy Policy</a> | 
+                        <a href="#" class="text-light text-decoration-none opacity-75 hover-opacity-100">Terms of Service</a>
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="d-flex justify-content-md-end gap-3">
+                        <a href="#" class="text-light opacity-75 hover-opacity-100">
+                            <i class="bi bi-twitter fs-5"></i>
+                        </a>
+                        <a href="#" class="text-light opacity-75 hover-opacity-100">
+                            <i class="bi bi-linkedin fs-5"></i>
+                        </a>
+                        <a href="#" class="text-light opacity-75 hover-opacity-100">
+                            <i class="bi bi-youtube fs-5"></i>
+                        </a>
+                        <a href="#" class="text-light opacity-75 hover-opacity-100">
+                            <i class="bi bi-instagram fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Notre JS -->
+    <script src="main.js"></script>
+    
+    <!-- Script spécifique à resources.html -->
+    <script>
+        function downloadResource(type) {
+            const resources = {
+                'memory': 'Memory Palace Starter Kit',
+                'math': 'Speed Math Workbook', 
+                'learning': 'Learning Strategy Guide'
+            };
+            
+            alert(`📥 Téléchargement de : ${resources[type]}\n\nVotre ressource commence à télécharger. Merci pour votre intérêt !`);
+            
+            // Simulation de téléchargement
+            setTimeout(() => {
+                alert('✅ Téléchargement terminé ! Consultez votre dossier de téléchargements.');
+            }, 2000);
+        }
+        
+        function startMemoryChallenge() {
+            alert('🧠 Défi Mémoire\n\nCe jeu interactif testera et améliorera votre mémoire à court terme avec différents niveaux de difficulté.');
+        }
+        
+        function startMathDrill() {
+            alert('🔢 Exercice de Calcul Mental\n\nPratiquez vos compétences en calcul mental avec des exercices chronométrés et des retours instantanés.');
+        }
+        
+        function startPatternGame() {
+            alert('🎯 Jeu de Reconnaissance de Formes\n\nAméliorez votre traitement visuel et vos compétences d\'identification de motifs.');
+        }
+    </script>
+</body>
+</html>
