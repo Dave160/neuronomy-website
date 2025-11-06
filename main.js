@@ -63,12 +63,13 @@ function handleMissingPages() {
 
 function isPageExists(pageUrl) {
     // Liste des pages qui existent DÉJÀ
-    const existingPages = [
-        'index.html',
-        'programs.html',
-        '404.html'
-        // Ajoutez ici les nouvelles pages au fur et à mesure
-    ];
+const existingPages = [
+    'index.html',
+    'programs.html', 
+    'resources.html',
+    'science.html',
+    '404.html'
+];
     
     return existingPages.includes(pageUrl);
 }
@@ -121,3 +122,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
