@@ -1,367 +1,123 @@
+/* science.css - Styles pour la page science */
+
 /* Science Hero */
 .science-hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 6rem 2rem;
-  text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 80vh;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
 }
 
-.science-hero h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
+/* Science Cards */
+.science-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
 }
 
-.hero-subtitle {
-  font-size: 1.25rem;
-  opacity: 0.9;
-  max-width: 600px;
-  margin: 0 auto 3rem;
+.science-card:hover {
+    transform: translateY(-5px);
 }
 
-.hero-stats {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  flex-wrap: wrap;
+.science-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: white;
 }
 
-.stat {
-  text-align: center;
+.science-card h3 {
+    font-size: 1.5rem;
+    color: #2e59d9;
+    margin-bottom: 1rem;
 }
 
-.stat strong {
-  display: block;
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.stat span {
-  font-size: 1rem;
-  opacity: 0.9;
-}
-
-/* Foundations Section */
-.foundations-section {
-  padding: 6rem 2rem;
-  background: #f8f9fa;
-}
-
-.foundations-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.foundation-card {
-  background: white;
-  padding: 2.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.foundation-card:hover {
-  transform: translateY(-5px);
-}
-
-.foundation-icon {
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 1.5rem;
-  font-size: 2rem;
-  color: white;
-}
-
-.foundation-card h3 {
-  font-size: 1.5rem;
-  color: #2e59d9;
-  margin-bottom: 1rem;
-}
-
-.foundation-description {
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+.science-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
 }
 
 .research-findings {
-  text-align: left;
-  margin-bottom: 2rem;
+    text-align: left;
+    margin-bottom: 2rem;
 }
 
 .research-findings h4 {
-  color: #2e59d9;
-  margin-bottom: 1rem;
-  text-align: center;
+    color: #2e59d9;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
 }
 
 .research-findings ul {
-  list-style: none;
+    list-style: none;
+    padding: 0;
 }
 
 .research-findings li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #f0f0f0;
-  color: #555;
-  position: relative;
-  padding-left: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #555;
+    position: relative;
+    padding-left: 1rem;
 }
 
 .research-findings li:before {
-  content: "•";
-  color: #667eea;
-  position: absolute;
-  left: 0;
+    content: "•";
+    color: #667eea;
+    position: absolute;
+    left: 0;
 }
 
 .citation {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #666;
-  font-size: 0.9rem;
-  font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+    justify-content: center;
 }
 
 .citation i {
-  color: #667eea;
+    color: #667eea;
 }
 
-/* Methodology Section */
-.methodology-section {
-  padding: 6rem 2rem;
-}
-
-.methodology-steps {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  margin-top: 3rem;
-}
-
-.method-step {
-  display: grid;
-  grid-template-columns: 100px 1fr 400px;
-  gap: 3rem;
-  align-items: center;
-}
-
-.method-step.reverse {
-  grid-template-columns: 400px 1fr 100px;
-}
-
-.method-step.reverse .step-number {
-  order: 3;
-}
-
-.method-step.reverse .step-content {
-  order: 2;
-}
-
-.method-step.reverse .step-visual {
-  order: 1;
-}
-
-.step-number {
-  font-size: 4rem;
-  font-weight: 900;
-  color: #e9ecef;
-  text-align: center;
-}
-
-.step-content h3 {
-  font-size: 1.75rem;
-  color: #2e59d9;
-  margin-bottom: 1rem;
-}
-
-.step-content p {
-  color: #666;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-}
-
-.research-areas {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-}
-
-.research-tag {
-  background: #e3f2fd;
-  color: #1976d2;
-  padding: 0.5rem 1rem;
-  border-radius: 2rem;
-  font-size: 0.85rem;
-  font-weight: 500;
-}
-
-.step-visual img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-/* Studies Section */
-.studies-section {
-  padding: 6rem 2rem;
-  background: #f8f9fa;
-}
-
-.studies-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.study-card {
-  background: white;
-  padding: 2.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.study-card:hover {
-  transform: translateY(-5px);
-}
-
-.study-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.5rem;
-}
-
-.journal-badge {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: #f8f9fa;
-  color: #666;
-  padding: 0.5rem 1rem;
-  border-radius: 2rem;
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-
-.impact-factor {
-  color: #666;
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
-.study-card h3 {
-  font-size: 1.25rem;
-  color: #2e59d9;
-  margin-bottom: 0.5rem;
-  line-height: 1.4;
-}
-
-.study-authors {
-  color: #666;
-  font-style: italic;
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
-}
-
-.study-abstract {
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  font-size: 0.95rem;
-}
-
-.study-findings {
-  margin-bottom: 2rem;
-}
-
-.study-findings h4 {
-  color: #2e59d9;
-  margin-bottom: 1rem;
-  font-size: 1rem;
-}
-
-.study-findings ul {
-  list-style: none;
-}
-
-.study-findings li {
-  padding: 0.25rem 0;
-  color: #555;
-  position: relative;
-  padding-left: 1rem;
-  font-size: 0.9rem;
-}
-
-.study-findings li:before {
-  content: "•";
-  color: #667eea;
-  position: absolute;
-  left: 0;
-}
-
-.study-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #667eea;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.study-link:hover {
-  color: #2e59d9;
-  text-decoration: underline;
-}
-
-/* Brain Regions Section */
-.brain-regions-section {
-  padding: 6rem 2rem;
-}
-
-.regions-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
+/* Region Cards */
 .region-card {
-  background: white;
-  padding: 2.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
 }
 
 .region-card:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .region-icon {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 1.5rem;
-  font-size: 2rem;
-  color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: white;
 }
 
 .region-icon.hippocampus { background: #4e73df; }
@@ -369,383 +125,160 @@
 .region-icon.parietal { background: #36b9cc; }
 
 .region-card h3 {
-  font-size: 1.5rem;
-  color: #2e59d9;
-  margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #2e59d9;
+    margin-bottom: 0.5rem;
 }
 
 .region-role {
-  color: #666;
-  font-weight: 500;
-  margin-bottom: 1rem;
-  font-size: 1rem;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 .region-description {
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
 }
 
 .region-functions {
-  text-align: left;
-  margin-bottom: 2rem;
+    text-align: left;
+    margin-bottom: 2rem;
 }
 
 .region-functions h4 {
-  color: #2e59d9;
-  margin-bottom: 1rem;
-  text-align: center;
+    color: #2e59d9;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 .region-functions ul {
-  list-style: none;
+    list-style: none;
+    padding: 0;
 }
 
 .region-functions li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #f0f0f0;
-  color: #555;
-  position: relative;
-  padding-left: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #555;
+    position: relative;
+    padding-left: 1rem;
 }
 
 .region-functions li:before {
-  content: "•";
-  color: #667eea;
-  position: absolute;
-  left: 0;
+    content: "•";
+    color: #667eea;
+    position: absolute;
+    left: 0;
 }
 
 .training-impact {
-  background: #e8f5e8;
-  color: #2e7d32;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  font-size: 0.9rem;
-  text-align: center;
+    background: #e8f5e8;
+    color: #2e7d32;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    text-align: center;
 }
 
-/* Evidence Section */
-.evidence-section {
-  padding: 6rem 2rem;
-  background: #f8f9fa;
-}
-
-.evidence-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-bottom: 4rem;
-}
-
+/* Evidence Cards */
 .evidence-card {
-  background: white;
-  padding: 2.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
 }
 
 .evidence-card:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .evidence-icon {
-  width: 70px;
-  height: 70px;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 1.5rem;
-  font-size: 1.75rem;
-  color: white;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.75rem;
+    color: white;
 }
 
 .evidence-card h3 {
-  font-size: 1.5rem;
-  color: #2e59d9;
-  margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #2e59d9;
+    margin-bottom: 1.5rem;
 }
 
 .evidence-stats {
-  display: flex;
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
-  justify-content: center;
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    justify-content: center;
 }
 
 .stat-result {
-  text-align: center;
+    text-align: center;
 }
 
 .stat-result strong {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #2e59d9;
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2e59d9;
 }
 
 .stat-result span {
-  font-size: 0.85rem;
-  color: #666;
+    font-size: 0.85rem;
+    color: #666;
 }
 
 .evidence-card p {
-  color: #666;
-  line-height: 1.6;
-}
-
-.research-timeline {
-  background: white;
-  padding: 2.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.research-timeline h3 {
-  color: #2e59d9;
-  margin-bottom: 2rem;
-  text-align: center;
-  font-size: 1.75rem;
-}
-
-.timeline {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.timeline:before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: #e9ecef;
-  transform: translateX(-50%);
-}
-
-.timeline-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 3rem;
-  position: relative;
-}
-
-.timeline-item:nth-child(odd) {
-  flex-direction: row-reverse;
-  text-align: right;
-}
-
-.timeline-year {
-  flex: 0 0 100px;
-  background: #667eea;
-  color: white;
-  padding: 0.75rem;
-  border-radius: 2rem;
-  font-weight: 600;
-  text-align: center;
-  z-index: 2;
-}
-
-.timeline-content {
-  flex: 1;
-  padding: 0 2rem;
-}
-
-.timeline-content h4 {
-  color: #2e59d9;
-  margin-bottom: 0.5rem;
-}
-
-.timeline-content p {
-  color: #666;
-  margin: 0;
-}
-
-/* Collaboration Section */
-.collaboration-section {
-  padding: 6rem 2rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-}
-
-.collaboration-content {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 4rem;
-  align-items: start;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.collaboration-info h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.collaboration-info p {
-  font-size: 1.1rem;
-  opacity: 0.9;
-  margin-bottom: 2rem;
-  line-height: 1.6;
-}
-
-.collaboration-benefits {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.benefit {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.benefit i {
-  color: #4ecdc4;
-}
-
-.collaboration-cta {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-}
-
-.collaboration-partners h3 {
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-}
-
-.partners-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
-
-.partner-logo {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  text-align: center;
-  font-weight: 700;
-  font-size: 1.25rem;
-  backdrop-filter: blur(10px);
-}
-
-/* Buttons */
-.btn-primary {
-  background: white;
-  color: #667eea;
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  text-decoration: none;
-}
-
-.btn-primary:hover {
-  transform: translateY(-2px);
-  color: #667eea;
+    color: #666;
+    line-height: 1.6;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .science-hero h1 {
-    font-size: 2.5rem;
-  }
-  
-  .hero-stats {
-    gap: 2rem;
-  }
-  
-  .method-step {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    text-align: center;
-  }
-  
-  .method-step.reverse {
-    grid-template-columns: 1fr;
-  }
-  
-  .step-number {
-    order: -1;
-  }
-  
-  .step-visual {
-    order: 2;
-  }
-  
-  .step-content {
-    order: 1;
-  }
-  
-  .collaboration-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    text-align: center;
-  }
-  
-  .timeline:before {
-    left: 30px;
-  }
-  
-  .timeline-item {
-    flex-direction: row !important;
-    text-align: left !important;
-  }
-  
-  .timeline-year {
-    flex: 0 0 80px;
-    margin-right: 2rem;
-  }
-  
-  .evidence-stats {
-    flex-direction: column;
-    gap: 1rem;
-  }
+    .science-hero {
+        min-height: 60vh;
+        padding-top: 50px;
+        text-align: center;
+    }
+    
+    .science-card,
+    .region-card,
+    .evidence-card {
+        padding: 2rem;
+    }
+    
+    .evidence-stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .research-findings,
+    .region-functions {
+        text-align: center;
+    }
+    
+    .research-findings li,
+    .region-functions li {
+        text-align: left;
+    }
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.section-subtitle {
-  font-size: 1.25rem;
-  color: #666;
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto 3rem;
-}
-
-.highlight {
-  background: linear-gradient(45deg, #ffd89b, #19547b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.fade-in-up {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.fade-in-up.visible {
-  opacity: 1;
-  transform: translateY(0);
+@media (max-width: 576px) {
+    .science-card,
+    .region-card,
+    .evidence-card {
+        margin: 0 -1rem;
+        border-radius: 0;
+    }
 }
